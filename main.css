@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-image: url('burger-and-glass-of-milk-on-table-2335690.jpg');
+    background-size: cover;
+    background-position: top center;
+    
+  }
+  
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(80, 19, 204, 0.5);
+    border-radius: 26px 0px 16px 0px;
+    border-bottom: 3px solid #65ec0a;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  header input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    color: #FFF;
+    font-size: 36px;
+  }
+  
+  .current .temp {
+    
+    color: #FFF;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0px;
+    text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .current .temp span {
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+  }
+  
+  .current .hi-low {
+    color: #FFF;
+    font-size: 44px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+  }
+
+
+  .container-1
+{  font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-top:200px;
+    padding: 0;
+    width: 100%;
+    height:100px;
+}
+.item{
+    text-align: center;
+}
+h1{
+    display: inline-block;
+    margin:0;
+    padding: 0;
+    color:#111;
+    font-size: 5em;
+}
+h1 span{
+    display: table-cell;
+    margin:0;
+    padding:0;
+    animation: animate 1.5s linear infinite;
+}
+h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+h1 span:nth-child(5){
+    animation-delay: 1s;
+}
+h1 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+
+@keyframes animate{
+  0% ,100%{
+      color:#fff;
+      filter:blur(2px);
+      text-shadow: 0 0 10px #00b3ff,
+                  0 0 20px #00b3ff,
+                  0 0 40px #00b3ff,
+                  0 0 80px #00b3ff,
+                  0 0 120px #00b3ff,
+                  0 0 200px #00b3ff;            
+      
+
+  }
+  5% ,95%{
+      color:#111;
+      filter:blur(0px);
+      text-shadow:0 0 10px none;
+  }
+}
